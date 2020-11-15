@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   namespace :storefront do
-    namespace v1: do
+    namespace :v1 do
     end
   end
 end
