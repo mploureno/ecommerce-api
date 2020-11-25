@@ -1,3 +1,4 @@
-Admin::V1::CategoriesController < ApplicationController
-
+module Admin::V1
+  class CategoriesController < ApiController
+  end
 end
