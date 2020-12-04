@@ -8,6 +8,9 @@ class Product < ApplicationRecord
   validates :description, presence: :true
   validates :price, presence: :true
   validates :image, presence: :true
+  validates :status, presence: :true
+
+  enum status: { available: 1, unavailable: 2 }
 
   include NameSearchable
   include Paginatable
