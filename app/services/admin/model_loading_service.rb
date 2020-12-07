@@ -22,8 +22,8 @@ module Admin
     private
 
     def normalize_pagination_params
-      @pagination[:page]   = @searchable_model.model::DEFAULT_PAGE if @paginate[:page]   <= 0
-      @pagination[:length] = @searchable_model.model::MAX_PER_PAGE if @paginate[:length] <= 0
+      @pagination[:page]   = @searchable_model.model::DEFAULT_PAGE if @pagination[:page]   <= 0
+      @pagination[:length] = @searchable_model.model::MAX_PER_PAGE if @pagination[:length] <= 0
     end
   end
 end
